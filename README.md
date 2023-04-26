@@ -1,6 +1,10 @@
 # GPT4try
 一个基于gradio 的简易对话webui 界面，目前只支持 https://github.com/ymcui/Chinese-LLaMA-Alpaca 项目的中文Alpaca大模型。
 
+###这是第一版，有各种各样的bug，做这个的原因是oobabooga/text-generation-webui更新以后有各种各样的问题一直没搞好，而我只需要一个简单的界面去测试一下各种模型的效果，所以干脆自己做个精简的ui界面，尽量少使用各种依赖包，并且可以按自己的想法做界面。
+
+硬件要求: 内存32G以上（实际使用31.7G），无需显卡
+
 安装方式：
 ```
 pip install -r requirements.txt
@@ -34,3 +38,5 @@ python main.py
 然后复制地址 “http://127.0.0.1:7860/” 到浏览器访问
 
 需要模型的同学，或者不知道如何转换模型的可以在discuss区留言。
+
+
