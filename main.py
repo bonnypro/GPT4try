@@ -27,7 +27,7 @@ DEVICE = "cpu"
 def create_prompt(instruction: str) -> str:
     return PROMPT_TEMPLATE.replace("[INSTRUCTION]", instruction)
  
-print(create_prompt("你好"))
+print(create_prompt("by 刘畅 https://github.com/bonnypro/GPT4try.git "))
 
 def generate_response(prompt: str, model: PeftModel) -> GreedySearchDecoderOnlyOutput:
     encoding = tokenizer(prompt, return_tensors="pt")
